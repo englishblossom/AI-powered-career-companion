@@ -1,0 +1,168 @@
+body {
+  background-color: #fff6ee;
+  font-family: Arial, sans-serif;
+  height: 100dvh /* Set the height to 100% of the viewport */;
+}
+
+.up-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 40px auto;
+  gap: 20px;
+}
+
+/* Resume Upload Section */
+.up-resume-section {
+  width: 50%;
+  min-height: 600px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #ccc;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.up-resume-preview {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.up-resume-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Profile Form Section */
+.up-form-section {
+  width: 50%;
+  padding: 40px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels aligned to left of inputs */
+.up-form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.up-form-group label {
+  font-weight: bold;
+  width: 120px;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.up-form-group input {
+  flex: 1;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.up-file-upload {
+  display: none;
+}
+
+.up-file-upload-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 20px; */
+  margin: 20px 0;
+  gap: 15px;
+}
+
+.up-upload-label {
+  background-color: #70161f;
+  color: white;
+  text-align: center;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  width: 250px;
+}
+
+.up-upload-label:hover {
+  background-color: #5a1218;
+}
+
+/* Buttons */
+.up-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.up-buttons button {
+  width: 48%;
+  padding: 14px;
+  background-color: #70161f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.up-buttons button:hover {
+  background-color: #5a1218;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin: -10px 0 10px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .up-container {
+    flex-direction: column-reverse;
+    width: 90%;
+    padding-bottom: 200px;
+  }
+
+  .up-resume-section,
+  .up-form-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .up-form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .up-form-group label {
+    width: auto;
+    margin-bottom: 5px;
+  }
+
+  .up-buttons {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .up-file-upload-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

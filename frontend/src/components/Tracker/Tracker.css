@@ -1,0 +1,34 @@
+.tracker-area {
+  padding-bottom: 200px;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.table-container {
+  font-size: 0.9rem;
+}
+
+table thead th {
+  text-align: center;
+}
+
+.view-underline {
+  text-decoration: underline;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .table-container {
+    max-height: 400px; /* Set your desired max height */
+    overflow-y: auto; /* Vertical scrollbar */
+    overflow-x: auto; /* Prevent horizontal scroll */
+  }
+
+  /* Ensure header stays fixed on scroll */
+  .table-container thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f8f0e8; /* Adjust your header background color */
+    z-index: 1;
+  }
+}
